@@ -1,0 +1,27 @@
+mixin menu(link, texto)
+    li.nav 
+        a(href=link)=texto
+
+mixin midias(link, src)
+    li.midias
+        a(href=link)
+            img(src=src)
+
+
+header.fix
+    .grid-container-minus
+          
+        .col-3-6r1
+            img.marca(src='images/logo.png')
+            ul.navspacer
+                +menu('home.html', 'Home')
+                +menu('about.html', 'About Us')
+                +menu('services.html', 'Services')
+                +menu('portfolio.html', 'Portfolio')
+                +menu('contato.html', 'Contact Us')   
+        .col-3r1
+            ul.spacer
+                +midias('facebook.com','images/facebook.png')
+                +midias('twitter.com','images/twitter.png')
+                +midias('linkedin.com','images/linkedin.png')
+                

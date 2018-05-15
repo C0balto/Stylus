@@ -1,0 +1,26 @@
+extends template.pug
+
+
+
+mixin frame(link, src, titulo, texto)
+    article.art-img
+        a(href=link)
+            img.canvas(src=src)
+        h2.canvas-title()=titulo
+        p(texto)=texto
+
+
+block conteudo 
+    section.grid-container.cluster
+        .col-3-3r1
+            +frame('#','images/img5.png','titulo1','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ligula erat. Mauris nisi nisl, dapibus nec dolor ut, finibus tristique tellus. Sed sed turpis sodales, facilisis purus vel, eleifend nulla. Aenean eu urna id augue pretium convallis. Praesent arcu elit, aliquam a semper a, vehicula a ante. Curabitur eu enim rutrum, facilisis quam in, aliquam dui. Quisque et risus nisl.')
+        .col-3r1
+            +frame('#','images/img7.png','titulo1','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ligula erat. Mauris nisi nisl, dapibus nec dolor ut, finibus tristique tellus. Sed sed turpis sodales, facilisis purus vel, eleifend nulla. Aenean eu urna id augue pretium convallis. Praesent arcu elit, aliquam a semper a, vehicula a ante. Curabitur eu enim rutrum, facilisis quam in, aliquam dui. Quisque et risus nisl.')
+        .col-3r1
+            +frame('#','images/img8.png','titulo1','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ligula erat. Mauris nisi nisl, dapibus nec dolor ut, finibus tristique tellus. Sed sed turpis sodales, facilisis purus vel, eleifend nulla. Aenean eu urna id augue pretium convallis. Praesent arcu elit, aliquam a semper a, vehicula a ante. Curabitur eu enim rutrum, facilisis quam in, aliquam dui. Quisque et risus nisl.')
+        .col-3-3r2
+            +frame('#','images/img3.jpg','titulo1','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ligula erat. Mauris nisi nisl, dapibus nec dolor ut, finibus tristique tellus. Sed sed turpis sodales, facilisis purus vel, eleifend nulla. Aenean eu urna id augue pretium convallis. Praesent arcu elit, aliquam a semper a, vehicula a ante. Curabitur eu enim rutrum, facilisis quam in, aliquam dui. Quisque et risus nisl.')
+        .col-3r2
+            +frame('#','images/img1.jpg','titulo1','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ligula erat. Mauris nisi nisl, dapibus nec dolor ut, finibus tristique tellus. Sed sed turpis sodales, facilisis purus vel, eleifend nulla. Aenean eu urna id augue pretium convallis. Praesent arcu elit, aliquam a semper a, vehicula a ante. Curabitur eu enim rutrum, facilisis quam in, aliquam dui. Quisque et risus nisl.')
+        .col-3r2
+            +frame('#','images/img3.jpg','titulo1','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ligula erat. Mauris nisi nisl, dapibus nec dolor ut, finibus tristique tellus. Sed sed turpis sodales, facilisis purus vel, eleifend nulla. Aenean eu urna id augue pretium convallis. Praesent arcu elit, aliquam a semper a, vehicula a ante. Curabitur eu enim rutrum, facilisis quam in, aliquam dui. Quisque et risus nisl.')
